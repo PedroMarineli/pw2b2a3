@@ -19,11 +19,11 @@ public class NumerosController {
                     resultado = new int[1];
                 } else {
                     int[] temp = resultado;
-                    resultado = new int[temp.lenght + 1];
-                    for(int pos = 0; pos < temp.lenght; pos++)
+                    resultado = new int[temp.length + 1];
+                    for(int pos = 0; pos < temp.length; pos++)
                         resultado[pos] = temp[pos];
                 }
-                resultado[resultado.lenght - 1] = val;
+                resultado[resultado.length - 1] = val;
             }
         }
         model.addAttribute("valores", resultado);
